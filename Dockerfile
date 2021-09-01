@@ -1,4 +1,4 @@
-FROM php:7.4-apache 
+FROM php:8.0.10-apache-bullseye
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install libzip-dev libpng-dev -y
 RUN docker-php-ext-install pdo_mysql mysqli gd bcmath
